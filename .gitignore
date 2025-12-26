@@ -48,12 +48,26 @@ datasets/
 *.pkl
 *.pickle
 
+# Cached datasets (LLM experiments)
+metamathqa_tokenized_data/
+*_tokenized_data/
+*.arrow
+*.parquet
+
 # Logs and results
 logs/
 results/
 *.log
 wandb/
 tensorboard_logs/
+
+# Profiler traces and logs
+profiler_logs/
+*.trace.json
+*.pt.trace.json
+*_trace.json
+*_trace/
+profiler_bkp_logs/
 
 # IDE
 .vscode/
