@@ -31,7 +31,7 @@ def load_metamathqa_dataset(split="train[:1000]", cache_dir="./metamathqa_tokeni
         print(f"Loading cached tokenized dataset from {cache_dir}...")
         try:
             tokenized_dataset = load_from_disk(cache_dir)
-            print(f"✅ Loaded {len(tokenized_dataset)} examples from cache")
+            print(f" Loaded {len(tokenized_dataset)} examples from cache")
             return tokenized_dataset, tokenizer
         except:
             print("Cache load failed, regenerating...")
@@ -89,7 +89,7 @@ def load_metamathqa_dataset(split="train[:1000]", cache_dir="./metamathqa_tokeni
         # Save to cache
         print(f"Saving tokenized dataset to {cache_dir}...")
         tokenized_dataset.save_to_disk(cache_dir)
-        print(f"✅ Dataset processed: {len(tokenized_dataset)} examples")
+        print(f" Dataset processed: {len(tokenized_dataset)} examples")
     
     # For non-rank-0 processes, wait and load from cache
     if rank != 0:
