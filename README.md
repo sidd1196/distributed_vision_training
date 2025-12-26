@@ -253,10 +253,4 @@ The LLM notebooks automatically configure parallelism based on GPU count:
 - [MetaMathQA Dataset](https://huggingface.co/datasets/meta-math/MetaMathQA)
 - [Megatron-LM](https://github.com/NVIDIA/Megatron-LM) (conceptual reference for 3D+ parallelism)
 
-## License
 
-See LICENSE file in the repository.
-
-## Contributing
-
-This is a course project for MSML 610. For questions or issues, please refer to the course materials or contact the instructor.
